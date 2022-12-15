@@ -1,0 +1,154 @@
+html,body{
+  height:100%;
+  margin:0;
+
+  font-size:16px;
+  font-family: 'Lato', sans-serif;
+  font-weight:100;
+  line-height:1.8em;
+  }
+
+.img{
+  background-image:url(https://www.freecodecamp.org/news/content/images/size/w2000/2021/10/faizur-rehman-pHPzdEHN6Os-unsplash.jpg);
+ 
+  min-height:100vh;
+  
+  background-position:center;
+  background-size:cover;
+  
+  
+  
+}
+.ptext{
+  padding-top:1px;
+}
+.ptext2,.ptext{x;
+  padding-left:200px;
+  font-size:2em;
+  letter-spacing:4px;
+  color:white;
+ 
+  
+}
+
+
+
+span{
+  
+  font-size:0.6em;
+}
+.black-box{
+  background-color:black;
+  color:white;
+  min-height:150px;
+}
+.second{
+  text-align:center;
+  font-size:3rem;
+  padding-top:30px;
+   padding-bottom:1px;
+}
+.big-text{
+  font-size:100px;
+ 
+}
+.work{
+  display:grid;
+  gap:20px;
+  margin:50px 0;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+max-width:1100px;
+  margin:50 auto;
+}
+.card{
+  max-width:320px;
+  max-height:450px;
+  border-radius:10px;
+  box-shadow:3px 5px 5px rgba(1,1,1,0.2);
+    transition:0.2s ease-in-out;
+
+}
+.card:hover{
+transform:scale(1.04);
+    box-shadow:3px 5px 5px rgba(1,1,1,0.3);
+  transition:0.2s ease-in-out;
+
+}
+.grid-item{
+  display:flex;
+  justify-content:center;
+  align-item:center;
+  
+}
+.card-content{
+  padding:20px;
+}
+.card-content h3{
+  margin-bottom:10px;
+}
+.bottom-section{
+  display:flex;
+  
+}
+.top-contact{
+  background-color:#515603;
+}
+.about{
+  background-color:#722300;
+}
+.top-contact,.about{
+  min-height:300px;
+  padding:32px;
+  color:white;
+  
+}
+.top-contact p,.about p{
+  margin-bottom:20px;
+}
+.top-contact h2,.about h2{
+  font-size:64px;
+  font-weight:300;
+}
+footer{
+  text-align:center;
+  text-transformation:uppercase;
+  background-color:black;
+  padding:20px;
+  color:white;
+  
+}
+
+@media(max-width:1100px){.img{
+  min-height:100vh
+  }
+  .ptext{
+    font-size:1em;
+    padding:1px;
+    text-align:center;
+  } 
+  .black-box h2{
+    font-size:24px;
+  }
+  .black-box .big-text1 .big-text{
+    font-weight:400;
+    font-size:32px;
+  }
+  .bottom-section{
+    flex-direction:column;
+  }
+  .about h2,.top-contact h2{
+    font-size:32px;
+  }
+  h1{
+    line-height:1;
+  }
+}
+@media(min-width:1200px){
+  .img{
+    min-height:200vh;
+  }
+  .work{
+      padding-left:150px
+
+  }
+}
